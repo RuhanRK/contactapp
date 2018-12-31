@@ -70,7 +70,7 @@ export default class EditToContact extends Component {
             newContact
         );
 
-        dispatch({ action: "UPDATE_CONTACT", payload: res.data });
+        dispatch({ type: "UPDATE_CONTACT", payload: res.data });
         // clearInput
         this.setState({
             contact: {
